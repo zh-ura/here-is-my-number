@@ -24,4 +24,4 @@ If `browse` doesn't launch your browser, type in [http://localhost:8080/](http:/
 
 ### Stack
 * [Scalatra](http://scalatra.org) with twirl for web
-* Spark for mapping
+* [Spark](https://spark.apache.org) for mapping
