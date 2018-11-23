@@ -1,0 +1,12 @@
+@(error: String = "", inputValue: String = "")(memorized: String = "")
+@layouts.html.default("Here-is-my-number: find a word in your #", "Here is my #:"){
+<form action="/" method="post">
+    <input name="digitalPhone" maxlength="10" value="@{if(inputValue.length > 0) inputValue}"/>
+    <input type="submit" value="Get Memorable #">
+    @if(error.length > 0) {
+    <p>@error</p>
+    } else if(memorized.length > 0) {
+    <p>@memorized</p>
+    }
+</form>
+}
